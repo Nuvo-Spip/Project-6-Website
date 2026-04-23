@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="code/style.css">
+        <title>Game</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Reaction Time Game</h1>
+        </header>
+
+        <!-- Navbar -->
+        <div>
+            <div id="navbar">
+                <nav>
+                    <a href="about.html">ABOUT</a> |
+                    <a href="game.html">GAME</a>
+                </nav>  
+            </div>  
+            <div style="text-align: center;"> 
+                <button onclick='hide_nav("navbar")' id="navbutton">
+                    <img id="navbutton_arrow" src="code/images/up.png">hide
+                </button> 
+            </div>
+        </div>
+
+        <!-- Game -->
+        <section>
+            <h2>Rules:</h2>
+            <ul>
+                <li>Press the buttons that are green to earn 1 point</li>
+                <li>Don't press the buttons are red, or else you'll lose 1 point</li>
+                <li>Try to get as many points as possible</li>
+                <li>Beware that the game gets faster as your score gets higher</li>
+            </ul>
+            <p id="score_counter">Score: 0</p>
+            <div id="gamebox">
+                <button class="game_button" id="btn1">CLICK!</button>
+                <button class="game_button" id="btn2">CLICK!</button>
+                <button class="game_button" id="btn3">CLICK!</button>
+                <button class="game_button" id="btn4">CLICK!</button>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer id="contact">
+                <p id="copyright">Copyright &copy; 2026; All rights reserved by Nuvo</p>
+            </footer>
+        <script src="code/java.js"></script>
+    </body>
+</html>

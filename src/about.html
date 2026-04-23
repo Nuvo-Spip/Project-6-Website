@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html> 
+    <head style="cursor: copy;">
+        <link rel="stylesheet" href="code/style.css">
+        <title> My website </title>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Welcome to Nuvo's website</h1>
+        </header>
+
+        <!-- navigation bar -->
+        <div>
+            <div id="navbar">
+                <nav style="background-color: #183071;">
+                    <a href="about.html">ABOUT</a> |
+                    <a href="game.html">GAME</a>
+                </nav>
+                <nav>
+                    <a href="#desc">Description</a> |
+                    <a href="#interest">Interests</a> |
+                    <a href="#contact">Contacts</a> 
+                </nav>  
+            </div>
+            
+            <div style="text-align: center;"> 
+                <button onclick='hide_nav("navbar")' id="navbutton">
+                    <img id="navbutton_arrow" src="code/images/up.png">hide
+                </button> 
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div>
+            <section id="desc">
+                <div>
+                    <h2>Description of me:</h2>
+                    <p>
+                        <img id="me_pic" src="code/images/NuvoPic.jpg" alt="picture of me"> 
+                        Hello!<br> My name is Nuvo.<br> I am 15 years old and currently studying at Satit Prasarnmit International Programme (or SPIP for short). I enjoy learning new skills and trying out new things. This is my HTML project for my computer science class.
+                    </p>
+                </div>
+            </section>
+
+            <section id="interest">
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="width: 50%;">
+                        <h2>My interests:</h2>
+                        <ul>
+                            <li><div>Movies <img src="code/images/movie.png"> </div></li>
+                            <li><div>Coding <img src="code/images/code.png"> </div></li>
+                            <li><div>Traveling <img src="code/images/travelling.png"> </div></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>My hobbies</h2>
+                        <ul>
+                            <li><div>Reading <img src="code/images/read.png"> </div></li>
+                            <li><div>Gaming <img src="code/images/game.png"> </div></li>
+                            <li><div>Cooking <img src="code/images/cook.png"> </div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="contact">
+                <div style="display: flex; justify-content: center;">
+                    <div style="text-align: left; ">
+                        <p><b>Contacts:</b></p>
+                        <p> <img src="code/images/phone-call.png"> +66 012 123 1234 </p>
+                        <p> <img src="code/images/email.png"> myemail@gmail.com </p>
+                    </div>
+                </div>
+                <p id="copyright">Copyright &copy; 2026; All rights reserved by Nuvo</p>
+            </footer>
+        </div>
+        <script src="code/java.js"> </script>
+    </body>
+</html>
